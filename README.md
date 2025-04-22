@@ -10,4 +10,4 @@ This is my [neovim](https://neovim.io/) configuration that I use on my machines.
 - A **C** compiler for linux (`sudo apt-get update && sudo apt-get install build-essential`)
 
 ## Optional 
-- A [nerd font](https://www.nerdfonts.com/). My setup uses CaskaydiaCove Nerd Font, but any nerd font can be used by editing `init.lua`. Otherwise, remove the options in the 'Font stuff' section of `init.lua`
+- A [nerd font](https://www.nerdfonts.com/). My setup uses CaskaydiaCove Nerd Font, but any nerd font can be used by editing `init.lua`. Otherwise, remove the options in the 'Font stuff' section of `init.lua` to not use a nerd font at all.
