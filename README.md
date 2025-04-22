@@ -8,3 +8,6 @@ This is my [neovim](https://neovim.io/) configuration that I use on my machines.
 - [fd](https://github.com/sharkdp/fd)
 - A python [virtual environment](https://docs.python.org/3/library/venv.html) - I have mine stored as `"~/.virtualenvs/main_venv"`. Ensure you change the `require("dap-python").setup(...)` line in `init.lua` to the location where your virtual environment is set up.
 - A **C** compiler for linux (`sudo apt-get update && sudo apt-get install build-essential`)
+
+## Optional 
+- A [nerd font](https://www.nerdfonts.com/). My setup uses CaskaydiaCove Nerd Font, but any nerd font can be used by editing `init.lua`. Otherwise, remove the options in the 'Font stuff' section of `init.lua`
