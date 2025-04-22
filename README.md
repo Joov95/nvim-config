@@ -7,3 +7,4 @@ This is my [neovim](https://neovim.io/) configuration that I use on my machines.
 - [pydebug](https://pypi.org/project/pydebug/)
 - [fd](https://github.com/sharkdp/fd)
 - A python [virtual environment](https://docs.python.org/3/library/venv.html) - I have mine stored as `"~/.virtualenvs/main_venv"`. Ensure you change the `require("dap-python").setup(...)` line in `init.lua` to the location where your virtual environment is set up.
+- A **C** compiler for linux (`sudo apt-get update && sudo apt-get install build-essential`)
