@@ -9,3 +9,13 @@ vim.opt.encoding = "utf-8"
 require("dap-python").setup("~/.virtualenvs/main_venv/bin/python")
 require("nvim-dap-virtual-text").setup()
 require("config.breakpoint-style")
+require('neogen').setup {
+  enabled = true,
+  languages = {
+    python = {
+      template = {
+        annotation_convention = "numpydoc"
+      }
+    },
+  }
+}
