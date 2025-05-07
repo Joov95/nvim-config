@@ -19,3 +19,5 @@ require('neogen').setup {
     },
   }
 }
+
+vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, silent = true })
