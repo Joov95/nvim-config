@@ -1,22 +1,5 @@
 return {
   {
-
-    "kylechui/nvim-surround",
-
-    version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
-
-    event = "VeryLazy",
-
-    config = function()
-      require("nvim-surround").setup({
-
-        -- Configuration here, or leave empty to use defaults
-
-      })
-    end
-
-  },
-  {
     "danymat/neogen",
 
     config = true,
@@ -108,5 +91,27 @@ return {
 
     },
 
+  },
+
+  {
+
+    "kylechui/nvim-surround",
+
+    version = "^3.0.0", -- Use for stability; omit to use `main` branch for the latest features
+
+    event = "VeryLazy",
+
+    config = function()
+      require("nvim-surround").setup({
+
+        -- Configuration here, or leave empty to use defaults
+
+      })
+
+      vim.api.nvim_set_keymap('n', '<Leader>ys', '<Plug>(nvim-surround-normal)', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('x', 'S', '<Plug>(nvim-surround-visual)', { noremap = true, silent = true })
+      vim.api.nvim_set_keymap('o', 'S', '<Plug>(nvim-surround-operator)', { noremap = true, silent = true })
+    end,
+    after = 'flash.nvim',
   }
 }
