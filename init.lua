@@ -25,3 +25,6 @@ vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'ys', '<Plug>(nvim-surround-normal)', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', 'S', '<Plug>(nvim-surround-visual)', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('o', 'S', '<Plug>(nvim-surround-operator)', { noremap = true, silent = true })
+
+--Clipboard stuff
+vim.opt.clipboard = "unnamedplus"
